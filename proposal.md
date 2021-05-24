@@ -18,6 +18,7 @@ The quotes will come from an external API; Currently I'm leaning toward using Ze
 ## Database Schema
 - User table: username (PK), password, optional about text. Don't know if I'll store anything beyond that.
 - Posts table: post id (PK), username (FK), title, text (need to determine limit), datetime, inspiration id (FK)
+- Reactions table: username (FK), post id (FK) (together make PK), reaction (enum)
 - Quotes table: quote id (PK), quote text, quote author, whether used already (bool)
 - Image table: image id (PK), image url, whether used already (bool)
 - Inspiration table: inspiration id (PK), quote id (FK), image id (FK), date, is current (true only on date)
