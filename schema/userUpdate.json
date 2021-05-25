@@ -1,16 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "userNew.json",
+  "$id": "userUpdate.json",
   "type": "object",
   "properties": {
-    "username": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 25
-    },
     "password": {
       "type": "string",
-      "minLength": 6,
+      "minLength": 5,
       "maxLength": 25
     },
     "firstName": {
@@ -30,5 +25,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["username", "firstName", "lastName", "password"]
+  "required": []
 }
