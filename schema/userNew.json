@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "newUser.json",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 25
+    },
+    "password": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 25
+    },
+    "firstName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "about": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "isAdmin": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["username", "firstName", "lastName", "password"]
+}
