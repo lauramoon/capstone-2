@@ -6,6 +6,7 @@ CREATE DATABASE inspire;
 \connect inspire
 
 \i inspire-schema.sql
+\i inspire-seed.sql
 
 \echo 'Delete and recreate inspire_test db?'
 \prompt 'Return for yes or control-C to cancel > ' foo
